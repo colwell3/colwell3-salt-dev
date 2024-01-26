@@ -2,14 +2,6 @@
 
 ### Configuring your host for Development
 
-- Stop salt-minion.service
-```
-systemctl stop salt-minion.service
-```
-- move /etc/salt/minion.d 
-```
-mv /etc/salt/minion.d /etc/salt/minion.d_old
-```
 - Create or copy the minion file from config_files /etc/salt/minion config file
 ``` yaml
 file_roots:
@@ -35,3 +27,9 @@ git clone git@github.com: .
 
 - Create directory in /srv/salt/salt/my_state
 - Create init.sls
+
+### Running Tests
+- salt-call
+```
+salt-call --local state.apply saltenv=test -l debug
+```
