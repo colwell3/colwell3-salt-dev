@@ -1,0 +1,7 @@
+file_roots:
+  test:
+    - /srv/salt/salt
+
+pillar_roots:
+  test:
+    - /srv/salt/pillar
