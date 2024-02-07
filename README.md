@@ -4,6 +4,8 @@
 
 - Create or copy the minion file from config_files /etc/salt/minion config file
 ``` yaml
+pillarenv_from_saltenv: True
+
 file_roots:
   test:
     - /srv/salt/salt
