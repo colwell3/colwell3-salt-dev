@@ -1,3 +1,5 @@
+pillarenv: dev
+
 file_roots:
   test:
     - /srv/salt/salt
