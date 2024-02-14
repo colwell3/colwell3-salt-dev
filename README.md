@@ -17,12 +17,12 @@ pillar_roots:
 - Create salt directory with user permissions
 ```
 sudo mkdir /srv/salt
-setfacl setfacl -m u:netid:rwx /srv/salt
+setfacl setfacl -m u:user:rwx /srv/salt
 ```
 - Clone this template
 ```
 cd /srv/salt
-git clone git@github.com: .
+git clone https://github.com/colwell3/colwell3-salt-dev.git .
 ```
 
 ### Developing
