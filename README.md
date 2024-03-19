@@ -17,7 +17,7 @@ pillar_roots:
 - Create salt directory with user permissions
 ```
 sudo mkdir /srv/salt
-setfacl setfacl -m u:user:rwx /srv/salt
+setfacl -m u:user:rwx /srv/salt
 ```
 - Clone this template
 ```
