@@ -2,7 +2,7 @@
 
 ### Configuring your host for Development
 
-- Create or copy the minion file from config_files /etc/salt/minion config file
+- As root, Create or copy the minion file from config_files /etc/salt/minion config file
 ``` yaml
 pillarenv_from_saltenv: True
 
@@ -14,12 +14,12 @@ pillar_roots:
   test:
     - /srv/salt/pillar
 ```
-- Create salt directory with user permissions
+- As root, Create salt directory with user permissions 
 ```
 sudo mkdir /srv/salt
 setfacl -m u:user:rwx /srv/salt
 ```
-- Clone this template
+- As your netid, Clone this template 
 ```
 cd /srv/salt
 git clone https://github.com/colwell3/colwell3-salt-dev.git .
