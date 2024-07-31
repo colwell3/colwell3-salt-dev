@@ -1,4 +1,4 @@
-pillarenv: dev
+pillarenv_from_saltenv: True
 
 file_roots:
   test:
