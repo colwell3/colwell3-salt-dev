@@ -17,12 +17,9 @@ pillar_roots:
 - As root, Create salt directory with user permissions 
 ```
 sudo mkdir /srv/salt
-setfacl -m u:user:rwx /srv/salt
-```
-- As your netid, Clone this template 
-```
 cd /srv/salt
 git clone https://github.com/colwell3/colwell3-salt-dev.git .
+chown -R netid: /srv/salt
 ```
 
 ### Developing
@@ -33,5 +30,5 @@ git clone https://github.com/colwell3/colwell3-salt-dev.git .
 ### Running Tests
 - salt-call
 ```
-salt-call --local state.apply saltenv=test -l debug
+salt-call state.apply hello-world --local saltenv=test -l debug
 ```
